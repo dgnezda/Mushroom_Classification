@@ -1,6 +1,6 @@
-# ML_Final_Portfolio
+# ML Final Portfolio
  
-###Machine Learning Final Portfolio Project
+### Machine Learning Final Portfolio Project
 
 The goal of this project is to make a Machine Learning model that predicts 
 whether a mushroom is poisonous or edible, based on the freely accessible 
