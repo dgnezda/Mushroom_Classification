@@ -71,14 +71,14 @@ Note: try to get insights from a field expert for these steps.
    exploration.
 3. Study each attribute and its characteristics:
 
-  * Name
-  * Type (categorical, int/float, bounded/unbounded, text,
-    structured, etc.)
-  * % of missing values
-  * Noisiness and type of noise (stochastic, outliers,
-    rounding errors, etc.)
-  * Usefulness for the task
-  * Type of distribution (Gaussian, uniform, logarithmic, etc.)
+* Name
+* Type (categorical, int/float, bounded/unbounded, text,
+  structured, etc.)
+* % of missing values
+* Noisiness and type of noise (stochastic, outliers,
+  rounding errors, etc.)
+* Usefulness for the task
+* Type of distribution (Gaussian, uniform, logarithmic, etc.)
 
 4. For supervised learning tasks, identify the target attribute(s).
 5. Visualize the data.
@@ -93,9 +93,9 @@ Prepare the Data
 ----------------
 
 Notes:
+
 - Work on copies of the data (keep the original dataset intact).
-- Write functions for all data transformations you apply, for five
-  reasons:
+- Write functions for all data transformations you apply, for five reasons:
 
   * So you can easily prepare the data the next time you get a fresh dataset
   * So you can apply these transformations in future projects
