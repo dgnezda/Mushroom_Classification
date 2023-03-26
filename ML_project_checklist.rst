@@ -70,16 +70,14 @@ Note: try to get insights from a field expert for these steps.
 2. Create a Jupyter notebook to keep a record of your data
    exploration.
 3. Study each attribute and its characteristics:
-
-* Name
-* Type (categorical, int/float, bounded/unbounded, text,
-  structured, etc.)
-* % of missing values
-* Noisiness and type of noise (stochastic, outliers,
-  rounding errors, etc.)
-* Usefulness for the task
-* Type of distribution (Gaussian, uniform, logarithmic, etc.)
-
+  * Name
+  * Type (categorical, int/float, bounded/unbounded, text,
+    structured, etc.)
+  * % of missing values
+  * Noisiness and type of noise (stochastic, outliers,
+    rounding errors, etc.)
+  * Usefulness for the task
+  * Type of distribution (Gaussian, uniform, logarithmic, etc.)
 4. For supervised learning tasks, identify the target attribute(s).
 5. Visualize the data.
 6. Study the correlations between attributes.
@@ -211,9 +209,9 @@ Present Your Solution
 Launch!
 -------
 
-6. Get your solution ready for production (plug into production data
+1. Get your solution ready for production (plug into production data
    inputs, write unit tests, etc.).
-7. Write monitoring code to check your system’s live performance at
+2. Write monitoring code to check your system’s live performance at
    regular intervals and trigger alerts when it drops.
 
 * Beware of slow degradation: models tend to “rot” as data evolves.
@@ -224,5 +222,5 @@ Launch!
   becoming stale). This is particularly important for online
   learning systems.
 
-8. Retrain your models on a regular basis on fresh data (automate as
+3. Retrain your models on a regular basis on fresh data (automate as
    much as possible).
