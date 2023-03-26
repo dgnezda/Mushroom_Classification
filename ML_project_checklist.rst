@@ -65,11 +65,12 @@ Explore the Data
 
 Note: try to get insights from a field expert for these steps.
 
-#. Create a copy of the data for exploration (sampling it down to a
+1. Create a copy of the data for exploration (sampling it down to a
    manageable size if necessary).
-#. Create a Jupyter notebook to keep a record of your data
+2. Create a Jupyter notebook to keep a record of your data
    exploration.
-#. Study each attribute and its characteristics:
+3. Study each attribute and its characteristics:
+
   * Name
   * Type (categorical, int/float, bounded/unbounded, text,
     structured, etc.)
@@ -78,13 +79,14 @@ Note: try to get insights from a field expert for these steps.
     rounding errors, etc.)
   * Usefulness for the task
   * Type of distribution (Gaussian, uniform, logarithmic, etc.)
-#. For supervised learning tasks, identify the target attribute(s).
-#. Visualize the data.
-#. Study the correlations between attributes.
-#. Study how you would solve the problem manually.
-#. Identify the promising transformations you may want to apply.
-#. Identify extra data that would be useful (go back to “Get the Data”).
-#. Document what you have learned.
+
+4. For supervised learning tasks, identify the target attribute(s).
+5. Visualize the data.
+6. Study the correlations between attributes.
+7. Study how you would solve the problem manually.
+8. Identify the promising transformations you may want to apply.
+9. Identify extra data that would be useful (go back to “Get the Data”).
+10. Document what you have learned.
 
 
 Prepare the Data
@@ -94,30 +96,31 @@ Notes:
 * Work on copies of the data (keep the original dataset intact).
 * Write functions for all data transformations you apply, for five
   reasons:
+
   - So you can easily prepare the data the next time you get a fresh dataset
   - So you can apply these transformations in future projects
   - To clean and prepare the test set
   - To clean and prepare new data instances once your solution is live
   - To make it easy to treat your preparation choices as hyperparameters
 
-# Data cleaning:
+#. Data cleaning:
 
   * Fix or remove outliers (optional).
   * Fill in missing values (e.g., with zero, mean, median…) or drop their 
     rows (or columns).
 
-# Feature selection (optional):
+#. Feature selection (optional):
   
   * Drop the attributes that provide no useful information for the task.
 
-# Feature engineering, where appropriate:
+#. Feature engineering, where appropriate:
 
   * Discretize continuous features.
   * Decompose features (e.g., categorical, date/time, etc.).
   * Add promising transformations of features (e.g., log(x), sqrt(x), x , etc.).
   * Aggregate features into promising new features.
 
-# Feature scaling:
+#. Feature scaling:
 
   * Standardize or normalize features.
 
