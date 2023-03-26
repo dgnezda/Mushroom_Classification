@@ -93,15 +93,15 @@ Prepare the Data
 ----------------
 
 Notes:
-* Work on copies of the data (keep the original dataset intact).
-* Write functions for all data transformations you apply, for five
+- Work on copies of the data (keep the original dataset intact).
+- Write functions for all data transformations you apply, for five
   reasons:
 
-  - So you can easily prepare the data the next time you get a fresh dataset
-  - So you can apply these transformations in future projects
-  - To clean and prepare the test set
-  - To clean and prepare new data instances once your solution is live
-  - To make it easy to treat your preparation choices as hyperparameters
+  * So you can easily prepare the data the next time you get a fresh dataset
+  * So you can apply these transformations in future projects
+  * To clean and prepare the test set
+  * To clean and prepare new data instances once your solution is live
+  * To make it easy to treat your preparation choices as hyperparameters
 
 #. Data cleaning:
 
@@ -130,29 +130,29 @@ Shortlist Promising Models
 
 Notes:
 
-* If the data is huge, you may want to sample smaller training sets
+- If the data is huge, you may want to sample smaller training sets
   so you can train many different models in a reasonable time (be
   aware that this penalizes complex models such as large neural
   nets or Random Forests).
-* Once again, try to automate these steps as much as possible.
+- Once again, try to automate these steps as much as possible.
 
-# Train many quick-and-dirty models from different categories
+#. Train many quick-and-dirty models from different categories
   (e.g., linear, naive Bayes, SVM, Random Forest, neural net, etc.)
   using standard parameters.
-# Measure and compare their performance.
+#. Measure and compare their performance.
   
   * For each model, use N-fold cross-validation and compute
     the mean and standard deviation of the performance
     measure on the N folds.
 
-# Analyze the most significant variables for each algorithm.
-# Analyze the types of errors the models make.
+#. Analyze the most significant variables for each algorithm.
+#. Analyze the types of errors the models make.
 
   * What data would a human have used to avoid these errors?
 
-# Perform a quick round of feature selection and engineering.
-# Perform one or two more quick iterations of the five previous steps.
-# Shortlist the top three to five most promising models, preferring
+#. Perform a quick round of feature selection and engineering.
+#. Perform one or two more quick iterations of the five previous steps.
+#. Shortlist the top three to five most promising models, preferring
   models that make different types of errors.
 
 
@@ -161,11 +161,11 @@ Fine-Tune the System
 
 Notes:
 
-* You will want to use as much data as possible for this step,
+- You will want to use as much data as possible for this step,
   especially as you move toward the end of fine-tuning.
-* As always, automate what you can.
+- As always, automate what you can.
 
-# Fine-tune the hyperparameters using cross-validation:
+#. Fine-tune the hyperparameters using cross-validation:
   
   * Treat your data transformation choices as
     hyperparameters, especially when you are not sure about
@@ -178,12 +178,12 @@ Notes:
     optimization approach (e.g., using Gaussian process
     priors, as described by Jasper Snoek et al.).
 
-# Try Ensemble methods. Combining your best models will often
+#. Try Ensemble methods. Combining your best models will often
   produce better performance than running them individually.
-# Once you are confident about your final model, measure its
+#. Once you are confident about your final model, measure its
   performance on the test set to estimate the generalization error.
 
-*WARNING*
+**WARNING**
 Don’t tweak your model after measuring the generalization error: you would just
 start overfitting the test set.
 
@@ -191,18 +191,18 @@ start overfitting the test set.
 Present Your Solution
 ---------------------
 
-# Document what you have done.
-# Create a nice presentation.
+#. Document what you have done.
+#. Create a nice presentation.
 
   * Make sure you highlight the big picture first.
 
-# Explain why your solution achieves the business objective.
-# Don’t forget to present interesting points you noticed along the way.
+#. Explain why your solution achieves the business objective.
+#. Don’t forget to present interesting points you noticed along the way.
 
   * Describe what worked and what did not.
   * List your assumptions and your system’s limitations.
 
-# Ensure your key findings are communicated through beautiful
+#. Ensure your key findings are communicated through beautiful
   visualizations or easy-to-remember statements (e.g., “the median
   income is the number-one predictor of housing prices”).
 
@@ -210,9 +210,9 @@ Present Your Solution
 Launch!
 -------
 
-# Get your solution ready for production (plug into production data
+#. Get your solution ready for production (plug into production data
   inputs, write unit tests, etc.).
-# Write monitoring code to check your system’s live performance at
+#. Write monitoring code to check your system’s live performance at
   regular intervals and trigger alerts when it drops.
 
   * Beware of slow degradation: models tend to “rot” as data evolves.
@@ -223,5 +223,5 @@ Launch!
     becoming stale). This is particularly important for online
     learning systems.
 
-# Retrain your models on a regular basis on fresh data (automate as
+#. Retrain your models on a regular basis on fresh data (automate as
   much as possible).
