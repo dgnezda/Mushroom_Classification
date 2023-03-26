@@ -137,8 +137,8 @@ Notes:
 - Once again, try to automate these steps as much as possible.
 
 1. Train many quick-and-dirty models from different categories
-  (e.g., linear, naive Bayes, SVM, Random Forest, neural net, etc.)
-  using standard parameters.
+   (e.g., linear, naive Bayes, SVM, Random Forest, neural net, etc.)
+   using standard parameters.
 2. Measure and compare their performance.
   
 * For each model, use N-fold cross-validation and compute
@@ -153,7 +153,7 @@ Notes:
 5. Perform a quick round of feature selection and engineering.
 6. Perform one or two more quick iterations of the five previous steps.
 7. Shortlist the top three to five most promising models, preferring
-  models that make different types of errors.
+   models that make different types of errors.
 
 
 Fine-Tune the System
@@ -179,11 +179,12 @@ Notes:
   priors, as described by Jasper Snoek et al.).
 
 2. Try Ensemble methods. Combining your best models will often
-  produce better performance than running them individually.
+   produce better performance than running them individually.
 3. Once you are confident about your final model, measure its
-  performance on the test set to estimate the generalization error.
+   performance on the test set to estimate the generalization error.
 
 **WARNING**
+
 Don’t tweak your model after measuring the generalization error: you would just
 start overfitting the test set.
 
@@ -203,17 +204,17 @@ Present Your Solution
 * List your assumptions and your system’s limitations.
 
 5. Ensure your key findings are communicated through beautiful
-  visualizations or easy-to-remember statements (e.g., “the median
-  income is the number-one predictor of housing prices”).
+   visualizations or easy-to-remember statements (e.g., “the median
+   income is the number-one predictor of housing prices”).
 
 
 Launch!
 -------
 
 6. Get your solution ready for production (plug into production data
-  inputs, write unit tests, etc.).
+   inputs, write unit tests, etc.).
 7. Write monitoring code to check your system’s live performance at
-  regular intervals and trigger alerts when it drops.
+   regular intervals and trigger alerts when it drops.
 
 * Beware of slow degradation: models tend to “rot” as data evolves.
 * Measuring performance may require a human pipeline
@@ -224,4 +225,4 @@ Launch!
   learning systems.
 
 8. Retrain your models on a regular basis on fresh data (automate as
-  much as possible).
+   much as possible).
