@@ -1,20 +1,21 @@
 ==================================
 Machine Learning Project Checklist
 ==================================
-
-
 This checklist can guide you through your Machine Learning projects.
 
+
 There are eight main steps:
-# Frame the problem and look at the big picture.
-# Get the data.
-# Explore the data to gain insights.
-# Prepare the data to better expose the underlying data patterns to
-  Machine Learning algorithms.
-# Explore many different models and shortlist the best ones.
-# Fine-tune your models and combine them into a great solution.
-# Present your solution.
-# Launch, monitor, and maintain your system.
+---------------------------
+
+#. Frame the problem and look at the big picture.
+#. Get the data.
+#. Explore the data to gain insights.
+#. Prepare the data to better expose the underlying data patterns to
+   Machine Learning algorithms.
+#. Explore many different models and shortlist the best ones.
+#. Fine-tune your models and combine them into a great solution.
+#. Present your solution.
+#. Launch, monitor, and maintain your system.
 
 Obviously, you should feel free to adapt this checklist to your needs.
 
@@ -22,19 +23,19 @@ Obviously, you should feel free to adapt this checklist to your needs.
 Frame the Problem and Look at the Big Picture
 ---------------------------------------------
 
-# Define the objective in business terms.
-# How will your solution be used?
-# What are the current solutions/workarounds (if any)?
-# How should you frame this problem (supervised/unsupervised, 
-  online/offline, etc.)?
-# How should performance be measured?
-# Is the performance measure aligned with the business objective?
-# What would be the minimum performance needed to reach the business objective?
-# What are comparable problems? Can you reuse experience or tools?
-# Is human expertise available?
-# How would you solve the problem manually?
-# List the assumptions you (or others) have made so far.
-# Verify assumptions if possible.
+#. Define the objective in business terms.
+#. How will your solution be used?
+#. What are the current solutions/workarounds (if any)?
+#. How should you frame this problem (supervised/unsupervised, 
+   online/offline, etc.)?
+#. How should performance be measured?
+#. Is the performance measure aligned with the business objective?
+#. What would be the minimum performance needed to reach the business objective?
+#. What are comparable problems? Can you reuse experience or tools?
+#. Is human expertise available?
+#. How would you solve the problem manually?
+#. List the assumptions you (or others) have made so far.
+#. Verify assumptions if possible.
 
 
 Get the Data
@@ -42,21 +43,21 @@ Get the Data
 
 Note: automate as much as possible so you can easily get fresh data.
 
-# List the data you need and how much you need.
-# Find and document where you can get that data.
-# Check how much space it will take.
-# Check legal obligations, and get authorization if necessary.
-# Get access authorizations.
-# Create a workspace (with enough storage space).
-# Get the data.
-# Convert the data to a format you can easily manipulate (without
-  changing the data itself).
-# Ensure sensitive information is deleted or protected (e.g.,
-  anonymized).
-# Check the size and type of data (time series, sample,
-  geographical, etc.).
-# Sample a test set, put it aside, and never look at it (no data
-  snooping!).
+#. List the data you need and how much you need.
+#. Find and document where you can get that data.
+#. Check how much space it will take.
+#. Check legal obligations, and get authorization if necessary.
+#. Get access authorizations.
+#. Create a workspace (with enough storage space).
+#. Get the data.
+#. Convert the data to a format you can easily manipulate (without
+   changing the data itself).
+#. Ensure sensitive information is deleted or protected (e.g.,
+   anonymized).
+#. Check the size and type of data (time series, sample,
+   geographical, etc.).
+#. Sample a test set, put it aside, and never look at it (no data
+   snooping!).
 
 
 Explore the Data
@@ -64,11 +65,11 @@ Explore the Data
 
 Note: try to get insights from a field expert for these steps.
 
-# Create a copy of the data for exploration (sampling it down to a
-  manageable size if necessary).
-# Create a Jupyter notebook to keep a record of your data
-  exploration.
-# Study each attribute and its characteristics:
+#. Create a copy of the data for exploration (sampling it down to a
+   manageable size if necessary).
+#. Create a Jupyter notebook to keep a record of your data
+   exploration.
+#. Study each attribute and its characteristics:
 
   * Name
   * Type (categorical, int/float, bounded/unbounded, text,
@@ -79,13 +80,13 @@ Note: try to get insights from a field expert for these steps.
   * Usefulness for the task
   * Type of distribution (Gaussian, uniform, logarithmic, etc.)
 
-# For supervised learning tasks, identify the target attribute(s).
-# Visualize the data.
-# Study the correlations between attributes.
-# Study how you would solve the problem manually.
-# Identify the promising transformations you may want to apply.
-# Identify extra data that would be useful (go back to “Get the Data”).
-# Document what you have learned.
+#. For supervised learning tasks, identify the target attribute(s).
+#. Visualize the data.
+#. Study the correlations between attributes.
+#. Study how you would solve the problem manually.
+#. Identify the promising transformations you may want to apply.
+#. Identify extra data that would be useful (go back to “Get the Data”).
+#. Document what you have learned.
 
 
 Prepare the Data
