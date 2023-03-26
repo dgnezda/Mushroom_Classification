@@ -70,7 +70,6 @@ Note: try to get insights from a field expert for these steps.
 #. Create a Jupyter notebook to keep a record of your data
    exploration.
 #. Study each attribute and its characteristics:
-
   * Name
   * Type (categorical, int/float, bounded/unbounded, text,
     structured, etc.)
@@ -79,7 +78,6 @@ Note: try to get insights from a field expert for these steps.
     rounding errors, etc.)
   * Usefulness for the task
   * Type of distribution (Gaussian, uniform, logarithmic, etc.)
-
 #. For supervised learning tasks, identify the target attribute(s).
 #. Visualize the data.
 #. Study the correlations between attributes.
