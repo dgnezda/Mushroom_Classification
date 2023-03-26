@@ -103,26 +103,26 @@ Notes:
   * To clean and prepare new data instances once your solution is live
   * To make it easy to treat your preparation choices as hyperparameters
 
-#. Data cleaning:
+1. Data cleaning:
 
-  * Fix or remove outliers (optional).
-  * Fill in missing values (e.g., with zero, mean, median…) or drop their 
-    rows (or columns).
+* Fix or remove outliers (optional).
+* Fill in missing values (e.g., with zero, mean, median…) or drop their 
+  rows (or columns).
 
-#. Feature selection (optional):
+2. Feature selection (optional):
   
-  * Drop the attributes that provide no useful information for the task.
+* Drop the attributes that provide no useful information for the task.
 
-#. Feature engineering, where appropriate:
+3. Feature engineering, where appropriate:
 
-  * Discretize continuous features.
-  * Decompose features (e.g., categorical, date/time, etc.).
-  * Add promising transformations of features (e.g., log(x), sqrt(x), x , etc.).
-  * Aggregate features into promising new features.
+* Discretize continuous features.
+* Decompose features (e.g., categorical, date/time, etc.).
+* Add promising transformations of features (e.g., log(x), sqrt(x), x , etc.).
+* Aggregate features into promising new features.
 
-#. Feature scaling:
+4. Feature scaling:
 
-  * Standardize or normalize features.
+* Standardize or normalize features.
 
 
 Shortlist Promising Models
@@ -136,23 +136,23 @@ Notes:
   nets or Random Forests).
 - Once again, try to automate these steps as much as possible.
 
-#. Train many quick-and-dirty models from different categories
+1. Train many quick-and-dirty models from different categories
   (e.g., linear, naive Bayes, SVM, Random Forest, neural net, etc.)
   using standard parameters.
-#. Measure and compare their performance.
+2. Measure and compare their performance.
   
-  * For each model, use N-fold cross-validation and compute
-    the mean and standard deviation of the performance
-    measure on the N folds.
+* For each model, use N-fold cross-validation and compute
+  the mean and standard deviation of the performance
+  measure on the N folds.
 
-#. Analyze the most significant variables for each algorithm.
-#. Analyze the types of errors the models make.
+3. Analyze the most significant variables for each algorithm.
+4. Analyze the types of errors the models make.
 
-  * What data would a human have used to avoid these errors?
+* What data would a human have used to avoid these errors?
 
-#. Perform a quick round of feature selection and engineering.
-#. Perform one or two more quick iterations of the five previous steps.
-#. Shortlist the top three to five most promising models, preferring
+5. Perform a quick round of feature selection and engineering.
+6. Perform one or two more quick iterations of the five previous steps.
+7. Shortlist the top three to five most promising models, preferring
   models that make different types of errors.
 
 
@@ -165,22 +165,22 @@ Notes:
   especially as you move toward the end of fine-tuning.
 - As always, automate what you can.
 
-#. Fine-tune the hyperparameters using cross-validation:
+1. Fine-tune the hyperparameters using cross-validation:
   
-  * Treat your data transformation choices as
-    hyperparameters, especially when you are not sure about
-    them (e.g., if you’re not sure whether to replace missing
-    values with zeros or with the median value, or to just
-    drop the rows).
-  * Unless there are very few hyperparameter values to
-    explore, prefer random search over grid search. If
-    training is very long, you may prefer a Bayesian
-    optimization approach (e.g., using Gaussian process
-    priors, as described by Jasper Snoek et al.).
+* Treat your data transformation choices as
+  hyperparameters, especially when you are not sure about
+  them (e.g., if you’re not sure whether to replace missing
+  values with zeros or with the median value, or to just
+  drop the rows).
+* Unless there are very few hyperparameter values to
+  explore, prefer random search over grid search. If
+  training is very long, you may prefer a Bayesian
+  optimization approach (e.g., using Gaussian process
+  priors, as described by Jasper Snoek et al.).
 
-#. Try Ensemble methods. Combining your best models will often
+2. Try Ensemble methods. Combining your best models will often
   produce better performance than running them individually.
-#. Once you are confident about your final model, measure its
+3. Once you are confident about your final model, measure its
   performance on the test set to estimate the generalization error.
 
 **WARNING**
@@ -191,18 +191,18 @@ start overfitting the test set.
 Present Your Solution
 ---------------------
 
-#. Document what you have done.
-#. Create a nice presentation.
+1. Document what you have done.
+2. Create a nice presentation.
 
-  * Make sure you highlight the big picture first.
+* Make sure you highlight the big picture first.
 
-#. Explain why your solution achieves the business objective.
-#. Don’t forget to present interesting points you noticed along the way.
+3. Explain why your solution achieves the business objective.
+4. Don’t forget to present interesting points you noticed along the way.
 
-  * Describe what worked and what did not.
-  * List your assumptions and your system’s limitations.
+* Describe what worked and what did not.
+* List your assumptions and your system’s limitations.
 
-#. Ensure your key findings are communicated through beautiful
+5. Ensure your key findings are communicated through beautiful
   visualizations or easy-to-remember statements (e.g., “the median
   income is the number-one predictor of housing prices”).
 
@@ -210,18 +210,18 @@ Present Your Solution
 Launch!
 -------
 
-#. Get your solution ready for production (plug into production data
+6. Get your solution ready for production (plug into production data
   inputs, write unit tests, etc.).
-#. Write monitoring code to check your system’s live performance at
+7. Write monitoring code to check your system’s live performance at
   regular intervals and trigger alerts when it drops.
 
-  * Beware of slow degradation: models tend to “rot” as data evolves.
-  * Measuring performance may require a human pipeline
-    (e.g., via a crowdsourcing service).
-  * Also monitor your inputs’ quality (e.g., a malfunctioning
-    sensor sending random values, or another team’s output
-    becoming stale). This is particularly important for online
-    learning systems.
+* Beware of slow degradation: models tend to “rot” as data evolves.
+* Measuring performance may require a human pipeline
+  (e.g., via a crowdsourcing service).
+* Also monitor your inputs’ quality (e.g., a malfunctioning
+  sensor sending random values, or another team’s output
+  becoming stale). This is particularly important for online
+  learning systems.
 
-#. Retrain your models on a regular basis on fresh data (automate as
+8. Retrain your models on a regular basis on fresh data (automate as
   much as possible).
