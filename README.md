@@ -7,3 +7,4 @@ whether a mushroom is poisonous or edible, based on the freely accessible
 dataset mushrooms from kaggle.com.
 https://www.kaggle.com/datasets/uciml/mushroom-classification 
 
+Open mushrooms.ipynb to view the project.
